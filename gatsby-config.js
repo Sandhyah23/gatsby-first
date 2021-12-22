@@ -3,7 +3,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
- require("dotenv").config({
+require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
@@ -39,5 +39,6 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_API_KEY,
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 }
